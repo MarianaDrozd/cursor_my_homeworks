@@ -132,7 +132,7 @@ list_comprehension = [num // 2 if num % 2 == 0 else num * 10 for num in range(10
 # 12. Convert (1) to list comprehension
 
 
-lst_comp = [num ** 2 if num % 2 else num ** 4 for num in range(10)]
+lst_comp = [num ** 2 if num % 2 == 0 else num ** 4 for num in range(10)]
 
 
 print(lst_comp)
