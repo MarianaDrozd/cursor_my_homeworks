@@ -257,9 +257,7 @@ print(func(2, 6))
 # 19*. Convert (8) to regular function
 
 def foo2(x, y, z):
-    if y < x:
-        return z
-    elif x > z:
+    if y < x and x > z:
         return z
     else:
         return y
