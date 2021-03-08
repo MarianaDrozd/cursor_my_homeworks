@@ -146,18 +146,18 @@ class Concert:
     max_visitors_num = 0
 
     def __init__(self, visitors_count=0):
-        self._visitors_count = visitors_count
+        self.visitors_count = visitors_count
 
     @property
     def visitors_count(self):
         return self._visitors_count
 
     @visitors_count.setter
-    def visitors_count(self, visitors_num):
-        if visitors_num > self.max_visitors_num:
+    def visitors_count(self, _visitors_count):
+        if _visitors_count >= self.max_visitors_num:
             self._visitors_count = self.max_visitors_num
         else:
-            self._visitors_count = visitors_num
+            self._visitors_count = _visitors_count
 
 
 Concert.max_visitors_num = 50
@@ -265,14 +265,16 @@ class Student:
 
 
 student = Student(1, "Oleg")
-student.email = "oleg1k@gmail.com"
-setattr(student, "student_email", "olegmail@gmail.com")
-print(getattr(student, "student_email"))
+setattr(student, "email", "oleg1k@gmail.com")
 print(student.email)
+student_email = student.__getattribute__("email")
+print(getattr(student, "email"))
+print(student_email)
 
 
 # Output:
-# olegmail@gmail.com
+# oleg1k@gmail.com
+# oleg1k@gmail.com
 # oleg1k@gmail.com
 
 # 11*.
