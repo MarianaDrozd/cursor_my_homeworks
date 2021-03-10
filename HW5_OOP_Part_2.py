@@ -27,16 +27,14 @@ class Battery:
         return f"{self.name}"
 
 
-battery1 = Battery(123)
-laptop = Laptop(battery1)
+laptop = Laptop("battery1")
 print(laptop)
 print(laptop.battery)
 
 
 # Output:
-# This is a class Laptop with the battery 123.
-# 123
-
+# This is a class Laptop with the battery battery1.
+# battery1
 
 # 2.
 class Guitar:
@@ -146,7 +144,7 @@ class Concert:
     max_visitors_num = 0
 
     def __init__(self, visitors_count=0):
-        self.visitors_count = visitors_count
+        self._visitors_count = visitors_count
 
     @property
     def visitors_count(self):
@@ -161,10 +159,9 @@ class Concert:
 
 
 Concert.max_visitors_num = 50
-concert = Concert()
-concert.visitors_count = 1000
+concert = Concert(100)
+concert.visitors_count = 50
 print(concert.visitors_count)
-
 
 # Output:
 # 50
