@@ -159,8 +159,8 @@ class Concert:
 
 
 Concert.max_visitors_num = 50
-concert = Concert(100)
-concert.visitors_count = 50
+concert = Concert()
+concert.visitors_count = 1000
 print(concert.visitors_count)
 
 # Output:
