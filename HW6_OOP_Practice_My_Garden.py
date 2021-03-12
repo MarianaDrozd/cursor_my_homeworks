@@ -27,8 +27,8 @@ class Garden(metaclass=GardenMetaClass):
     def show_the_garden(self):
         print(f'The garden has such vegetables: {self.vegetables}')
         print(f'Also garden has such fruits: {self.fruits}')
-        print(f'And such pests: {self.pests.pests_type}')
-        print(f'The maintainer of the garden is {self.gardener.name}')
+        print(f'And such pests: {self.pests}')
+        print(f'The maintainer of the garden is {self.gardener}')
 
 
 @dataclasses.dataclass()
@@ -150,6 +150,8 @@ class Tomato(Vegetables):
     def print_state(self):
         print(f'{self.vegetable_type} {self.index} is {self.state}')
 
+    def __repr__(self):
+        return f'{self.vegetable_type} {self.index} is {self.state}'
 
 class TomatoBush:
     def __init__(self, num):
@@ -195,6 +197,8 @@ class Apple(Fruit):
     def print_state(self):
         print(f'{self.fruits_type} {self.index} is {self.state}')
 
+    def __repr__(self):
+        return f'{self.fruits_type} {self.index} is {self.state}'
 
 class AppleTree:
     def __init__(self, num):
@@ -247,6 +251,9 @@ class StarGardener(Gardener):
                 return True
             return False
 
+    def __repr__(self):
+        return f'{self.name}'
+
 class PestsActivity(Pests):
     def __init__(self, pests_type, quantity):
         super(PestsActivity, self).__init__(pests_type, quantity)
@@ -265,6 +272,8 @@ class PestsActivity(Pests):
             print("Oh no! All fruits were eaten by pests!")
             break
 
+    def __repr__(self):
+        return f'{self.pests_type}  is {self.quantity}'
 
 if __name__ == '__main__':
     # Creating list of instances for vegetables and fruits, pests and gardener
@@ -302,12 +311,9 @@ if __name__ == '__main__':
 # Poisoning pests...
 # The Gardener poisoned all pests.
 # Now the garden is clean!
-# The garden has such vegetables: [<__main__.Tomato object at 0x7f8ddd268a00>,
-# <__main__.Tomato object at 0x7f8ddd268a90>, <__main__.Tomato object at 0x7f8ddd2688b0>,
-# <__main__.Tomato object at 0x7f8ddd2686a0>]
-# Also garden has such fruits: [<__main__.Apple object at 0x7f8ddd268bb0>, <__main__.Apple object at 0x7f8ddd268c40>,
-# <__main__.Apple object at 0x7f8ddd268c70>]
-# And such pests: worm
+# The garden has such vegetables: [Red_tomato 1 is 0, Red_tomato 2 is 0, Red_tomato 3 is 0, Red_tomato 4 is 0]
+# Also garden has such fruits: [Golden 1 is 0, Golden 2 is 0, Golden 3 is 0]
+# And such pests: worm  is 0
 # The maintainer of the garden is Tom
 # Gardner is working...
 # Red_tomato 1 is 1
@@ -348,3 +354,6 @@ if __name__ == '__main__':
 # Gardener is harvesting...
 # Harvesting is finished.
 # Harvesting is finished.
+#
+# Process finished with exit code 0
+
