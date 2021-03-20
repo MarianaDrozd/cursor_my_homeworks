@@ -29,32 +29,35 @@ class Predator(Animal):
 
     def eat(self, forest: Forest):
         prey = random.choice(list(forest.animals.values()))
-        if self.id == prey.id:
-            print(f">>>>>The Predator {animal.id} is hunting...<<<<<")
-            self.current_power = round(self.current_power * 0.5)
-            print(f"The Predator {self.id} was left without a dinner and its power is {self.current_power}!")
-            if self.current_power <= 0:
-                print(f"The Predator {animal.id} is dead by starving!")
-                forest.remove_animal(animal.id)
+        if prey.current_power == 0:
+            prey = random.choice(list(forest.animals.values()))
         else:
-            print(f">>>>>The Predator {animal.id} is hunting the Prey {prey.id}...<<<<<")
-            if self.speed > prey.speed and self.current_power > prey.current_power:
-                self.current_power = min(round(self.current_power + (self.max_power * 0.5)), self.max_power)
-                print(f"The Predator {animal.id} kills the Prey {prey.id}.",
-                      f"The Predator's power is {animal.current_power}")
-                forest.remove_animal(prey.id)
-            else:
-                self.current_power = max(round(self.current_power - self.max_power * 0.3), 0)
+            if self.id == prey.id:
+                print(f">>>>>The Predator {animal.id} is hunting...<<<<<")
+                self.current_power = round(self.current_power * 0.5)
+                print(f"The Predator {self.id} was left without a dinner and its power is {self.current_power}!")
                 if self.current_power <= 0:
-                    print(f"The Predator {animal.id} loses the fight and dies.")
+                    print(f"The Predator {animal.id} is dead by starving!")
                     forest.remove_animal(animal.id)
-                else:
-                    print(f"The Predator's {animal.id} power became {animal.current_power}.")
-                prey.current_power = max(round(prey.current_power - prey.max_power * 0.3), 0)
-                if prey.current_power == 0:
+            else:
+                print(f">>>>>The Predator {animal.id} is hunting the Prey {prey.id}...<<<<<")
+                if self.speed > prey.speed and self.current_power > prey.current_power:
+                    self.current_power = min(round(self.current_power + (self.max_power * 0.5)), self.max_power)
+                    print(f"The Predator {animal.id} kills the Prey {prey.id}.",
+                          f"The Predator's power is {animal.current_power}")
                     forest.remove_animal(prey.id)
                 else:
-                    print(f"The Prey's {prey.__class__.__name__} {prey.id} power became {prey.current_power}.")
+                    self.current_power = max(round(self.current_power - self.max_power * 0.3), 0)
+                    if self.current_power <= 0:
+                        print(f"The Predator {animal.id} loses the fight and dies.")
+                        forest.remove_animal(animal.id)
+                    else:
+                        print(f"The Predator's {animal.id} power became {animal.current_power}.")
+                    prey.current_power = max(round(prey.current_power - prey.max_power * 0.3), 0)
+                    if prey.current_power == 0:
+                        forest.remove_animal(prey.id)
+                    else:
+                        print(f"The Prey's {prey.__class__.__name__} {prey.id} power became {prey.current_power}.")
 
     def __repr__(self):
         return f"{__class__.__name__} {animal.id}"
@@ -117,7 +120,10 @@ if __name__ == "__main__":
         if not forest.any_predator_left():
             break
         for animal in list(forest.animals.values()):
-            animal.eat(forest=forest)
+            if animal.current_power == 0:
+                continue
+            else:
+                animal.eat(forest=forest)
         time.sleep(1)
     print(f"These animals survived in the forest: {list(forest.animals.values())}")
 
