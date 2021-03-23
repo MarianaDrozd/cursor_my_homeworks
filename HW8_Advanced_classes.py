@@ -125,10 +125,7 @@ if __name__ == "__main__":
         n += 1
         if not forest.any_predator_left():
             break
-        for animal in list(forest.animals.values()):
-            if animal.current_power == 0:
-                continue
-            else:
-                animal.eat(forest=forest)
+        for animal in forest:
+            animal.eat(forest=forest)
         time.sleep(1)
     print(f"These animals survived in the forest: {list(forest.animals.values())}")
