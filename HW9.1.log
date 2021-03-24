@@ -1,0 +1,156 @@
+2021-03-24 15:11:33,229 - root - INFO - Start running calculator
+2021-03-24 15:11:38,925 - root - INFO - Entered the 1-st number 2.0
+2021-03-24 15:11:41,541 - root - INFO - Entered second number 6.0
+2021-03-24 15:11:44,862 - root - INFO - Entered operation: +.
+2021-03-24 15:11:44,862 - root - INFO - 
+2021-03-24 15:11:44,862 - root - INFO - Called function calculator
+2021-03-24 15:11:44,862 - root - INFO - Result of operation 2.0 + 6.0 is 8.0
+2021-03-24 15:11:44,863 - root - INFO - The end of running calculator.
+2021-03-24 15:11:49,048 - root - INFO - Start running calculator
+2021-03-24 15:12:32,032 - root - INFO - Entered the 1-st number 2.0
+2021-03-24 15:12:33,452 - root - INFO - Entered second number 6.0
+2021-03-24 15:12:37,066 - root - INFO - Entered operation: -.
+2021-03-24 15:12:37,066 - root - INFO - 
+2021-03-24 15:12:37,067 - root - INFO - Called function calculator
+2021-03-24 15:12:37,067 - root - INFO - Result of operation 2.0 - 6.0 is -4.0
+2021-03-24 15:12:37,067 - root - INFO - The end of running calculator.
+2021-03-24 15:12:42,851 - root - INFO - Start running calculator
+2021-03-24 15:12:49,415 - root - INFO - Entered the 1-st number 16.0
+2021-03-24 15:12:53,331 - root - INFO - Entered second number 4.0
+2021-03-24 15:12:55,225 - root - INFO - Entered operation: /.
+2021-03-24 15:12:55,226 - root - INFO - 
+2021-03-24 15:12:55,226 - root - INFO - Called function calculator
+2021-03-24 15:12:55,226 - root - INFO - Result of operation 16.0 / 4.0 is 4.0
+2021-03-24 15:12:55,226 - root - INFO - The end of running calculator.
+2021-03-24 15:13:00,599 - root - INFO - Start running calculator
+2021-03-24 15:13:09,156 - root - INFO - Entered the 1-st number 16.0
+2021-03-24 15:13:10,941 - root - INFO - Entered second number 4.0
+2021-03-24 15:13:12,902 - root - INFO - Entered operation: *.
+2021-03-24 15:13:12,902 - root - INFO - 
+2021-03-24 15:13:12,902 - root - INFO - Called function calculator
+2021-03-24 15:13:12,902 - root - INFO - Result of operation 16.0 * 4.0 is 64.0
+2021-03-24 15:13:12,902 - root - INFO - The end of running calculator.
+2021-03-24 15:13:16,721 - root - INFO - Start running calculator
+2021-03-24 15:13:27,366 - root - INFO - Entered the 1-st number 16.0
+2021-03-24 15:13:30,679 - root - INFO - Entered second number 2.0
+2021-03-24 15:13:33,823 - root - INFO - Entered operation: ^.
+2021-03-24 15:13:33,823 - root - INFO - 
+2021-03-24 15:13:33,824 - root - INFO - Called function calculator
+2021-03-24 15:13:33,824 - root - INFO - Result of operation 16.0 ^ 2.0 is 4.0
+2021-03-24 15:13:33,824 - root - INFO - The end of running calculator.
+2021-03-24 15:13:41,140 - root - INFO - Start running calculator
+2021-03-24 15:13:44,628 - root - INFO - Entered the 1-st number 8.0
+2021-03-24 15:13:46,578 - root - INFO - Entered second number 3.0
+2021-03-24 15:13:50,180 - root - INFO - Entered operation: ^.
+2021-03-24 15:13:50,181 - root - INFO - 
+2021-03-24 15:13:50,181 - root - INFO - Called function calculator
+2021-03-24 15:13:50,181 - root - INFO - Result of operation 8.0 ^ 3.0 is 2.0
+2021-03-24 15:13:50,181 - root - INFO - The end of running calculator.
+2021-03-24 15:13:56,250 - root - INFO - Start running calculator
+2021-03-24 15:14:00,928 - root - INFO - Entered the 1-st number 25.0
+2021-03-24 15:14:06,583 - root - INFO - Entered second number 963258.0
+2021-03-24 15:14:11,322 - root - INFO - Entered operation: %.
+2021-03-24 15:14:11,323 - root - INFO - 
+2021-03-24 15:14:11,323 - root - INFO - Called function calculator
+2021-03-24 15:14:11,323 - root - INFO - Result of operation 25.0 % 963258.0 is 240814.5
+2021-03-24 15:14:11,323 - root - INFO - The end of running calculator.
+2021-03-24 15:14:23,339 - root - INFO - Start running calculator
+2021-03-24 15:14:31,734 - root - INFO - Entered the 1-st number 2.0
+2021-03-24 15:14:35,346 - root - INFO - Entered second number 10.0
+2021-03-24 15:14:40,376 - root - INFO - Entered operation: **.
+2021-03-24 15:14:40,377 - root - INFO - 
+2021-03-24 15:14:40,377 - root - INFO - Called function calculator
+2021-03-24 15:14:40,377 - root - INFO - Result of operation 2.0 ** 10.0 is 1024.0
+2021-03-24 15:14:40,377 - root - INFO - The end of running calculator.
+2021-03-24 15:14:46,534 - root - INFO - Start running calculator
+2021-03-24 15:14:51,184 - root - INFO - Entered the 1-st number 1.0
+2021-03-24 15:14:53,256 - root - INFO - Entered second number 0.0
+2021-03-24 15:14:55,146 - root - INFO - Entered operation: /.
+2021-03-24 15:14:55,146 - root - INFO - 
+2021-03-24 15:14:55,146 - root - ERROR - ZeroDivisionError
+Traceback (most recent call last):
+  File "/home/mariana/Документи/CURSOR/Homeworks/cursor_my_homeworks/HW9.1.Calculator.py", line 61, in calculator
+    a / b
+ZeroDivisionError: float division by zero
+2021-03-24 15:14:55,147 - root - INFO - Called function calculator
+2021-03-24 15:14:55,147 - root - INFO - Result of operation 1.0 / 0.0 is 0
+2021-03-24 15:14:55,147 - root - INFO - The end of running calculator.
+2021-03-24 15:15:23,817 - root - INFO - Start running calculator
+2021-03-24 15:15:28,004 - root - INFO - Entered the 1-st number 1.0
+2021-03-24 15:15:29,522 - root - INFO - Entered second number 0.0
+2021-03-24 15:15:31,332 - root - INFO - Entered operation: /.
+2021-03-24 15:15:31,333 - root - INFO - 
+2021-03-24 15:15:31,333 - root - ERROR - ZeroDivisionError
+Traceback (most recent call last):
+  File "/home/mariana/Документи/CURSOR/Homeworks/cursor_my_homeworks/HW9.1.Calculator.py", line 61, in calculator
+    a / b
+ZeroDivisionError: float division by zero
+2021-03-24 15:15:31,334 - root - INFO - Called function calculator
+2021-03-24 15:15:31,334 - root - INFO - Result of operation 1.0 / 0.0 is 0
+2021-03-24 15:15:31,334 - root - INFO - The end of running calculator.
+2021-03-24 15:15:36,471 - root - INFO - Start running calculator
+2021-03-24 15:15:40,510 - root - INFO - Entered the 1-st number 0.0
+2021-03-24 15:15:43,742 - root - INFO - Entered second number -3.0
+2021-03-24 15:15:50,876 - root - INFO - Entered operation: **.
+2021-03-24 15:15:50,876 - root - INFO - 
+2021-03-24 15:15:50,876 - root - ERROR - ZeroDivisionError
+Traceback (most recent call last):
+  File "/home/mariana/Документи/CURSOR/Homeworks/cursor_my_homeworks/HW9.1.Calculator.py", line 70, in calculator
+    a ** b
+ZeroDivisionError: 0.0 cannot be raised to a negative power
+2021-03-24 15:15:50,877 - root - INFO - Called function calculator
+2021-03-24 15:15:50,877 - root - INFO - Result of operation 0.0 ** -3.0 is 0
+2021-03-24 15:15:50,877 - root - INFO - The end of running calculator.
+2021-03-24 15:15:57,554 - root - INFO - Start running calculator
+2021-03-24 15:16:04,374 - root - INFO - Entered the 1-st number -1.0
+2021-03-24 15:16:06,928 - root - INFO - Entered second number 3.0
+2021-03-24 15:16:10,082 - root - INFO - Entered operation: ^.
+2021-03-24 15:16:10,082 - root - INFO - 
+2021-03-24 15:16:10,083 - root - INFO - Called function calculator
+2021-03-24 15:16:10,083 - root - INFO - Result of operation -1.0 ^ 3.0 is (0.5000000000000001+0.8660254037844386j)
+2021-03-24 15:16:10,083 - root - INFO - The end of running calculator.
+2021-03-24 15:18:31,370 - root - INFO - Start running calculator
+2021-03-24 15:18:34,529 - root - INFO - Entered the 1-st number 0.0
+2021-03-24 15:18:37,557 - root - INFO - Entered second number 1.0
+2021-03-24 15:18:42,795 - root - INFO - Entered operation: **.
+2021-03-24 15:18:42,796 - root - INFO - 
+2021-03-24 15:18:42,796 - root - INFO - Called function calculator
+2021-03-24 15:18:42,796 - root - INFO - Result of operation 0.0 ** 1.0 is 0.0
+2021-03-24 15:18:42,796 - root - INFO - The end of running calculator.
+2021-03-24 15:18:47,598 - root - INFO - Start running calculator
+2021-03-24 15:18:51,433 - root - INFO - Entered the 1-st number 1.0
+2021-03-24 15:18:53,253 - root - INFO - Entered second number 0.0
+2021-03-24 15:19:01,715 - root - INFO - Entered operation: **.
+2021-03-24 15:19:01,715 - root - INFO - 
+2021-03-24 15:19:01,715 - root - INFO - Called function calculator
+2021-03-24 15:19:01,715 - root - INFO - Result of operation 1.0 ** 0.0 is 1.0
+2021-03-24 15:19:01,716 - root - INFO - The end of running calculator.
+2021-03-24 15:19:07,665 - root - INFO - Start running calculator
+2021-03-24 15:19:11,978 - root - INFO - Entered the 1-st number 120.0
+2021-03-24 15:19:13,951 - root - INFO - Entered second number 0.0
+2021-03-24 15:19:17,082 - root - INFO - Entered operation: **.
+2021-03-24 15:19:17,083 - root - INFO - 
+2021-03-24 15:19:17,083 - root - INFO - Called function calculator
+2021-03-24 15:19:17,083 - root - INFO - Result of operation 120.0 ** 0.0 is 1.0
+2021-03-24 15:19:17,083 - root - INFO - The end of running calculator.
+2021-03-24 15:19:23,439 - root - INFO - Start running calculator
+2021-03-24 15:19:37,087 - root - INFO - Entered the 1-st number 0.0
+2021-03-24 15:19:47,660 - root - INFO - Entered second number -4.0
+2021-03-24 15:19:52,086 - root - INFO - Entered operation: **.
+2021-03-24 15:19:52,087 - root - INFO - 
+2021-03-24 15:19:52,087 - root - ERROR - ZeroDivisionError
+Traceback (most recent call last):
+  File "/home/mariana/Документи/CURSOR/Homeworks/cursor_my_homeworks/HW9.1.Calculator.py", line 70, in calculator
+    a ** b
+ZeroDivisionError: 0.0 cannot be raised to a negative power
+2021-03-24 15:19:52,087 - root - INFO - Called function calculator
+2021-03-24 15:19:52,088 - root - INFO - Result of operation 0.0 ** -4.0 is 0
+2021-03-24 15:19:52,088 - root - INFO - The end of running calculator.
+2021-03-24 20:02:26,589 - root - INFO - Start running calculator
+2021-03-24 20:02:35,774 - root - INFO - Entered the 1-st number 1024.0
+2021-03-24 20:02:40,187 - root - INFO - Entered second number 2.0
+2021-03-24 20:02:43,342 - root - INFO - Entered operation: ^.
+2021-03-24 20:02:43,342 - root - INFO - 
+2021-03-24 20:02:43,343 - root - INFO - Called function calculator
+2021-03-24 20:02:43,343 - root - INFO - Result of operation 1024.0 ^ 2.0 is 32.0
+2021-03-24 20:02:43,343 - root - INFO - The end of running calculator.
