@@ -24,7 +24,7 @@ print("You should enter two numbers and then operation with them.\n"
       "Hint: if you need operation '%', enter a percent value in the 2-nd number\n"
       "Hint: if you need operation '^', enter a root value in the 2-nd number")
 while True:
-    str_a = input("Enter first number: ")
+    str_a = input("Enter the 1-st number: ")
     try:
         a = float(str_a)
     except ValueError:
@@ -37,7 +37,7 @@ while True:
     except ValueError:
         print(f"{str_b} is not a number")
         continue
-    logging.info(f'Entered second number {b}')
+    logging.info(f'Entered the 2-nd number {b}')
     op = ["+", "-", "*", "/", "**", "^", "%"]
     operation = input("Enter your operation (+, -, *, /, **, ^, %): ")
     while operation not in op:
