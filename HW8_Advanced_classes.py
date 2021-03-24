@@ -128,4 +128,4 @@ if __name__ == "__main__":
             if animal.current_power == 0:
                 forest.remove_animal(animal)
         time.sleep(1)
-    print(f"These animals survived in the forest: {list(forest.animals.values())}")
+    print("Game over")
