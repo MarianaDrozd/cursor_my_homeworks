@@ -30,14 +30,14 @@ while True:
     except ValueError:
         print(f"{str_a} is not a number!")
         continue
-    logging.info(f'Entered the 1-st number {a}.')
+    logging.info(f"Entered the 1-st number {a}.")
     str_b = input("Enter the 2-nd number: ")
     try:
         b = float(str_b)
     except ValueError:
         print(f"{str_b} is not a number!")
         continue
-    logging.info(f'Entered the 2-nd number {b}.')
+    logging.info(f"Entered the 2-nd number {b}.")
     op = ["+", "-", "*", "/", "**", "^", "%"]
     operation = input("Enter your operation (+, -, *, /, **, ^, %): ")
     while operation not in op:
