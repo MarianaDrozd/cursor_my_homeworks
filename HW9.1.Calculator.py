@@ -21,27 +21,27 @@ logging.basicConfig(level=logging.INFO, filename='HW9.1.log', filemode='a', form
 logging.info("Start running calculator")
 print("Welcome to Calculator!")
 print("You should enter two numbers and then operation with them.\n"
-      "Hint: if you need operation '%', enter a percent value in the 2-nd number\n"
-      "Hint: if you need operation '^', enter a root value in the 2-nd number")
+      "Hint: if you need operation '%', enter a percent value in the 2-nd number.\n"
+      "Hint: if you need operation '^', enter a root value in the 2-nd number.")
 while True:
     str_a = input("Enter the 1-st number: ")
     try:
         a = float(str_a)
     except ValueError:
-        print(f"{str_a} is not a number")
+        print(f"{str_a} is not a number!")
         continue
-    logging.info(f'Entered the 1-st number {a}')
+    logging.info(f'Entered the 1-st number {a}.')
     str_b = input("Enter the 2-nd number: ")
     try:
         b = float(str_b)
     except ValueError:
-        print(f"{str_b} is not a number")
+        print(f"{str_b} is not a number!")
         continue
-    logging.info(f'Entered the 2-nd number {b}')
+    logging.info(f'Entered the 2-nd number {b}.')
     op = ["+", "-", "*", "/", "**", "^", "%"]
     operation = input("Enter your operation (+, -, *, /, **, ^, %): ")
     while operation not in op:
-        print(f'Operation {operation} is unknown. Try again!')
+        print(f"Operation {operation} is unknown. Try again!")
         operation = input("Enter your operation (+, -, *, /, **, ^, %): ")
     logging.info(f"Entered operation: {operation}.")
 
@@ -85,9 +85,9 @@ while True:
             return a * b / 100
     logging.info("")
     result = calculator()
-    logging.info('Called function calculator')
-    print(f'Result of {a} {operation} {b} is: ', result)
-    logging.info(f'Result of operation {a} {operation} {b} is {result}')
+    logging.info("Called function calculator")
+    print(f"Result of {a} {operation} {b} is: ", result)
+    logging.info(f"Result of operation {a} {operation} {b} is {result}")
     logging.info("The end of running calculator.")
     print("Thank you for using calculator!")
     break
