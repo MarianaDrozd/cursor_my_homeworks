@@ -56,10 +56,12 @@ class Predator(Animal):
 
 
 class Herbivorous(Animal):
-
     def eat(self, forest: Forest):
-        self.current_power = min(round(self.current_power + (self.max_power * 0.5)), self.max_power)
-        print(f"{__class__.__name__} {animal.id} is eating. Its power became {self.current_power}.")
+        if self.current_power == 0:
+            return
+        else:
+            self.current_power = min(round(self.current_power + (self.max_power * 0.5)), self.max_power)
+            print(f"{__class__.__name__} {animal.id} is eating. Its power became {self.current_power}.")
 
     def __repr__(self):
         return f"{__class__.__name__} {animal.id}"
@@ -92,10 +94,10 @@ class Forest:
         self.animals.update({animal.id: animal})
 
     def remove_animal(self, animal: AnyAnimal):
-        if len(self.animals.values()) == 0:
+        if len(self.animals) == 0:
             return
-        print(f"=====Removing dead animal {animal}...=====")
-        self.animals.popitem()
+        print(f"=====Removing dead animal {animal.__class__.__name__} {animal.id}...=====")
+        self.animals.pop(animal.id)
 
     def any_predator_left(self):
         return not all(isinstance(animal, Herbivorous) for animal in self.animals.values())
@@ -128,4 +130,5 @@ if __name__ == "__main__":
             if animal.current_power == 0:
                 forest.remove_animal(animal)
         time.sleep(1)
+    print(f"These animals survived in the forest: {list(forest.animals)}.")
     print("Game over")
