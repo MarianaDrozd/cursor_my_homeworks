@@ -154,3 +154,110 @@ ZeroDivisionError: 0.0 cannot be raised to a negative power
 2021-03-24 20:02:43,343 - root - INFO - Called function calculator
 2021-03-24 20:02:43,343 - root - INFO - Result of operation 1024.0 ^ 2.0 is 32.0
 2021-03-24 20:02:43,343 - root - INFO - The end of running calculator.
+2021-03-24 20:17:46,070 - root - INFO - Start running calculator
+2021-03-24 20:17:50,492 - root - INFO - Entered the 1-st number 3.0.
+2021-03-24 20:17:52,691 - root - INFO - Entered the 2-nd number 3.0.
+2021-03-24 20:17:55,293 - root - INFO - Entered operation: /.
+2021-03-24 20:17:55,293 - root - INFO - 
+2021-03-24 20:17:55,293 - root - INFO - Called function calculator
+2021-03-24 20:17:55,293 - root - INFO - Result of operation 3.0 / 3.0 is 1.0
+2021-03-24 20:17:55,293 - root - INFO - The end of running calculator.
+2021-03-24 20:20:19,996 - root - INFO - Start running calculator
+2021-03-24 20:20:57,893 - root - INFO - Start running calculator
+2021-03-24 20:21:03,705 - root - INFO - Entered the 1-st number 1024.0.
+2021-03-24 20:21:05,561 - root - INFO - Entered the 2-nd number 32.0.
+2021-03-24 20:21:08,290 - root - INFO - Entered operation: ^.
+2021-03-24 20:21:08,290 - root - INFO - 
+2021-03-24 20:21:08,290 - root - INFO - Called function calculator
+2021-03-24 20:21:08,290 - root - INFO - Result of operation 1024.0 ^ 32.0 is 1.241857812073484
+2021-03-24 20:21:08,290 - root - INFO - The end of running calculator.
+2021-03-24 20:24:43,798 - root - INFO - Start running calculator
+2021-03-24 20:25:01,386 - root - INFO - Entered the 1-st number 81.0.
+2021-03-24 20:25:07,922 - root - INFO - Entered the 2-nd number 3.0.
+2021-03-24 20:25:11,046 - root - INFO - Entered operation: ^.
+2021-03-24 20:25:11,046 - root - INFO - 
+2021-03-24 20:25:11,046 - root - INFO - Called function calculator
+2021-03-24 20:25:11,046 - root - INFO - Result of operation 81.0 ^ 3.0 is 4.3267487109222245
+2021-03-24 20:25:11,046 - root - INFO - The end of running calculator.
+2021-03-24 22:03:49,208 - root - INFO - Start running calculator
+2021-03-25 18:42:06,795 - root - INFO - Start running calculator
+2021-03-25 18:42:10,626 - root - INFO - Entered the 1-st number 0.0.
+2021-03-25 18:42:13,746 - root - INFO - Entered the 2-nd number -3.0.
+2021-03-25 18:42:18,032 - root - INFO - Entered operation: **.
+2021-03-25 18:42:18,033 - root - INFO - 
+2021-03-25 18:42:18,033 - root - ERROR - ZeroDivisionError
+Traceback (most recent call last):
+  File "/home/mariana/Документи/CURSOR/Homeworks/cursor_my_homeworks/HW9.1.Calculator.py", line 69, in calculator
+    a ** b
+ZeroDivisionError: 0.0 cannot be raised to a negative power
+2021-03-25 18:42:18,033 - root - INFO - Called function calculator
+2021-03-25 18:42:18,034 - root - INFO - Result of operation 0.0 ** -3.0 is 0
+2021-03-25 18:42:18,034 - root - INFO - The end of running calculator.
+2021-03-25 19:06:54,035 - root - INFO - Start running calculator
+2021-03-25 19:06:59,264 - root - INFO - Entered the 1-st number -2.0.
+2021-03-25 19:07:01,329 - root - INFO - Entered the 2-nd number 2.0.
+2021-03-25 19:07:04,513 - root - INFO - Entered operation: ^.
+2021-03-25 19:07:04,513 - root - INFO - 
+2021-03-25 19:07:04,513 - root - INFO - Called function calculator
+2021-03-25 19:07:04,514 - root - INFO - Result of operation -2.0 ^ 2.0 is (8.659560562354934e-17+1.4142135623730951j)
+2021-03-25 19:07:04,514 - root - INFO - The end of running calculator.
+2021-03-25 19:09:34,028 - root - INFO - Start running calculator
+2021-03-25 19:09:50,428 - root - INFO - Entered the 1-st number 5.0.
+2021-03-25 19:31:03,382 - root - INFO - Start running calculator
+2021-03-25 19:31:10,126 - root - INFO - Entered the 1-st number -3.0.
+2021-03-25 19:31:13,658 - root - INFO - Entered the 2-nd number -3.0.
+2021-03-25 19:31:16,425 - root - INFO - Entered operation: -.
+2021-03-25 19:31:16,425 - root - INFO - 
+2021-03-25 19:31:16,425 - root - INFO - Called function calculator
+2021-03-25 19:31:16,426 - root - INFO - Result of operation -3.0 - -3.0 is 0.0
+2021-03-25 19:31:16,426 - root - INFO - The end of running calculator.
+2021-03-26 16:08:22,389 - root - INFO - Start running calculator
+2021-03-26 16:08:26,975 - root - INFO - Entered the 1-st number 3.0.
+2021-03-26 16:08:41,504 - root - INFO - Entered the 2-nd number -3.0.
+2021-03-26 16:08:44,327 - root - INFO - Entered operation: ^.
+2021-03-26 16:08:44,327 - root - INFO - 
+2021-03-26 16:08:44,327 - root - INFO - Called function calculator
+2021-03-26 16:08:44,327 - root - INFO - Result of operation 3.0 ^ -3.0 is 0.6933612743506348
+2021-03-26 16:08:44,327 - root - INFO - The end of running calculator.
+2021-03-26 16:08:58,880 - root - INFO - Start running calculator
+2021-03-26 16:09:03,071 - root - INFO - Entered the 1-st number -3.0.
+2021-03-26 16:09:05,714 - root - INFO - Entered the 2-nd number 2.0.
+2021-03-26 16:09:07,899 - root - INFO - Entered operation: ^.
+2021-03-26 16:09:07,899 - root - INFO - 
+2021-03-26 16:09:07,899 - root - INFO - Called function calculator
+2021-03-26 16:09:07,899 - root - INFO - Result of operation -3.0 ^ 2.0 is (1.0605752387249068e-16+1.7320508075688772j)
+2021-03-26 16:09:07,900 - root - INFO - The end of running calculator.
+2021-03-26 16:52:42,936 - root - INFO - Start running calculator
+2021-03-26 16:52:48,367 - root - INFO - Entered the 1-st number -1.0.
+2021-03-26 16:52:49,833 - root - INFO - Entered the 2-nd number 2.0.
+2021-03-26 16:52:52,298 - root - INFO - Entered operation: ^.
+2021-03-26 16:52:52,298 - root - INFO - 
+2021-03-26 16:52:52,299 - root - INFO - Called function calculator
+2021-03-26 16:52:52,299 - root - INFO - Result of operation -1.0 ^ 2.0 is (6.123233995736766e-17+1j)
+2021-03-26 16:52:52,299 - root - INFO - The end of running calculator.
+2021-03-26 16:53:48,866 - root - INFO - Start running calculator
+2021-03-26 16:53:52,840 - root - INFO - Entered the 1-st number -3.0.
+2021-03-26 16:53:54,331 - root - INFO - Entered the 2-nd number 2.0.
+2021-03-26 16:53:56,837 - root - INFO - Entered operation: ^.
+2021-03-26 16:53:56,837 - root - INFO - 
+2021-03-26 16:53:56,837 - root - INFO - Called function calculator
+2021-03-26 16:53:56,837 - root - INFO - Result of operation -3.0 ^ 2.0 is (1.0605752387249068e-16+1.7320508075688772j)
+2021-03-26 16:53:56,838 - root - INFO - The end of running calculator.
+2021-03-26 16:57:54,300 - root - INFO - Start running calculator
+2021-03-26 16:58:03,767 - root - INFO - Entered the 1-st number -3.0.
+2021-03-26 16:58:05,374 - root - INFO - Entered the 2-nd number 2.0.
+2021-03-26 16:58:07,968 - root - INFO - Entered operation: ^.
+2021-03-26 16:58:07,968 - root - INFO - 
+2021-03-26 16:59:31,764 - root - INFO - Start running calculator
+2021-03-26 16:59:35,814 - root - INFO - Entered the 1-st number -1.0.
+2021-03-26 16:59:38,180 - root - INFO - Entered the 2-nd number 2.0.
+2021-03-26 16:59:40,306 - root - INFO - Entered operation: ^.
+2021-03-26 16:59:40,307 - root - INFO - 
+2021-03-26 17:00:59,656 - root - INFO - Start running calculator
+2021-03-26 17:01:25,155 - root - INFO - Start running calculator
+2021-03-26 17:01:37,001 - root - INFO - Entered the 1-st number 6.0.
+2021-03-26 17:01:38,935 - root - INFO - Entered the 2-nd number 2.0.
+2021-03-26 17:01:41,515 - root - INFO - Entered operation: ^.
+2021-03-26 17:01:41,515 - root - INFO - Called function calculator
+2021-03-26 17:01:41,515 - root - INFO - Result of operation 6.0 ^ 2.0 is 2.449489742783178
+2021-03-26 17:01:41,515 - root - INFO - The end of running calculator.
