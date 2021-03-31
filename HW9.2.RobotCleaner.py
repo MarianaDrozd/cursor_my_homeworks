@@ -50,7 +50,7 @@ class RobotCleaner:
         self.water_quantity = water_quantity
 
     def wash(self):
-        if self.water_quantity > 0:
+        if self.water_quantity > self.work_water:
             self.water_quantity -= self.work_water
             print(f"I wash your floor! I have {self.water_quantity} ml of water in my stomach!")
         else:
@@ -93,7 +93,7 @@ class RobotCleaner:
             time.sleep(1)
 
 
-zhorick = RobotCleaner(100, 0, 1000)
+zhorick = RobotCleaner(100, 0, 302)
 
 zhorick.move()
 
