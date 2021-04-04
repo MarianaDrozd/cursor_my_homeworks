@@ -33,7 +33,6 @@ class TestRobotCleaner(unittest.TestCase):
             self.assertGreaterEqual(r.trash_can, 0, "Negative value!")
             self.assertLessEqual(r.trash_can, 500, "More than 500!")
 
-
     def test_move(self):
         i = 1
         for r in self.robots:
