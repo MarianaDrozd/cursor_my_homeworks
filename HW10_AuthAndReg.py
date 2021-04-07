@@ -60,9 +60,6 @@ class Registration:
         for e in email:
             if e in wrong_symbols1:
                 return False
-            elif "@." not in email:
-                return False
-            return True
 
     @staticmethod
     def check_password_len(password):
@@ -75,7 +72,6 @@ class Registration:
         for p in password:
             if p in wrong_symbols:
                 return False
-            return True
 
     def user_registration(self, email, password):
         if self.check_email_len(email) is False:
@@ -96,9 +92,6 @@ class Registration:
 class Authorization:
     token = UserToken()
 
-    # def __init__(self, email: str, password: str):
-    #     self.email = email
-    #     self.password = password
     @staticmethod
     def check_user(email, password):
         if email in database.keys():
