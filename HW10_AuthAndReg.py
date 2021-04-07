@@ -49,74 +49,73 @@ class UserToken:
 
 
 class Registration:
-
-    def __init__(self, email: str, password: str):
-        self.email = email
-        self.password = password
-
-    def check_email_len(self):
-        if len(self.email) < 4 or len(self.email) > 30:
+    @staticmethod
+    def check_email_len(email):
+        if len(email) < 4 or len(email) > 30:
             return False
         return True
 
-    def check_email_symbols(self):
-        for e in self.email:
+    @staticmethod
+    def check_email_symbols(email):
+        for e in email:
             if e in wrong_symbols1:
                 return False
-            elif ["@", "."] not in self.email:
-                return False
+            # elif "@." not in email:
+            #     return False
             return True
 
-    def check_exist(self):
-        if self.email not in database:
-            database.update({self.email: self.password})
-            return True
-        return False
-
-    def check_password_len(self):
-        if len(self.password) < 8 or len(self.password) > 15:
+    @staticmethod
+    def check_password_len(password):
+        if len(password) < 8 or len(password) > 15:
             return False
         return True
 
-    def check_password_symbols(self):
-        for p in self.password:
+    @staticmethod
+    def check_password_symbols(password):
+        for p in password:
             if p in wrong_symbols:
                 return False
             return True
 
-    def user_registration(self):
-        if self.check_email_len() is False:
+    def user_registration(self, email, password):
+        if self.check_email_len(email) is False:
             raise EmailLenError("Email should have from 4 to 30 symbols length!")
-        elif self.check_email_symbols() is False:
+        elif self.check_email_symbols(email) is False:
             raise EmailInvSymbolsError("Your email has invalid symbol(s)!")
-        elif self.check_exist() is True:
+        elif email in database.keys():
             raise UserExistError("This user already exists")
-        elif self.check_password_len() is False:
+        elif self.check_password_len(password) is False:
             raise PasswordLenError("Password should have from 8 to 16 symbols length!")
-        elif self.check_password_symbols() is False:
+        elif self.check_password_symbols(password) is False:
             raise PasswordInvSymbolsError("Your password has invalid symbol(s)!")
         else:
+            database.update({email: password})
             return "200"
 
 
 class Authorization:
     token = UserToken()
 
-    def __init__(self, email: str, password: str):
-        self.email = email
-        self.password = password
-
-    def check_user(self):
-        if self.email in database.keys():
-            if self.password == database[self.email]:
+    # def __init__(self, email: str, password: str):
+    #     self.email = email
+    #     self.password = password
+    @staticmethod
+    def check_user(email, password):
+        if email in database.keys():
+            if password in database.values():
                 return True
             return False
-        return False
 
-    def user_authorization(self):
-        if self.check_user() is False:
-            return self.token
+    def user_authorization(self, email, password):
+        if self.check_user(email, password) is True:
+            return self.token.__str__()
         raise AuthorizationError("Authorization Error!")
 
 
-user = Registration("mail@gmail.com", "12345678")
+# user1 = Registration()
+#
+# user1.user_registration("mail58@gmail.com", "12553478")
+# print(database)
+# user2 = Authorization()
+#
+# user2.user_authorization("mail1@gmail.com", "12345678")
