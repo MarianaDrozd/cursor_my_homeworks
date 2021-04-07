@@ -60,8 +60,8 @@ class Registration:
         for e in email:
             if e in wrong_symbols1:
                 return False
-            # elif "@." not in email:
-            #     return False
+            elif "@." not in email:
+                return False
             return True
 
     @staticmethod
