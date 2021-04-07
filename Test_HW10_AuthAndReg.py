@@ -12,7 +12,7 @@ class TestRegistration(unittest.TestCase):
         with self.assertRaises(Ar.EmailInvSymbolsError):
             self.test_reg.user_registration("ar!ra@gmail.com", "oij6oij0i")
         with self.assertRaises(Ar.UserExistError):
-            self.test_reg.user_registration("mymail@gmail.com", "m1password")
+            self.test_reg.user_registration("mail2@gmail.com", "23456789")
         with self.assertRaises(Ar.PasswordLenError):
             self.test_reg.user_registration("luhiku@i.ua", "i")
         with self.assertRaises(Ar.PasswordInvSymbolsError):
