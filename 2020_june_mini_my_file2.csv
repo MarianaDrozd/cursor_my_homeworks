@@ -1,0 +1,17 @@
+31,Kharkiv,8500,500,Software Engineer,2,2,Java,,21,male,Еще студент,ХНУРЭ,True,средний,свыше 1000 человек,Аутсорсинговая,Media
+3615,Kharkiv,2800,1000,Software Engineer,3,2,Java,,21,male,Еще студент,ХНУРЭ,True,средний,свыше 1000 человек,Аутсорсинговая,Security
+4218,Odessa,2500,0,Software Engineer,3,1,Java,,21,male,Еще студент,ОНПУ,True,выше среднего,до 1000 человек,Аутстаффинговая,Telecom
+5139,Kharkiv,2150,900,Software Engineer,2,2,Java,,21,male,Высшее,НТУ «ХПИ»,False,выше среднего,свыше 1000 человек,Аутсорсинговая,Fintech
+5167,Lviv,2100,1500,Software Engineer,2,2,Java,,21,male,Высшее,Lvivская Политехника,False,выше среднего,свыше 1000 человек,Аутсорсинговая,E-commerce
+5513,Lviv,2000,1200,Software Engineer,2,2,Java,,21,male,Высшее,Lvivская Политехника,False,выше среднего,до 200 человек,Аутстаффинговая,"E-commerce, Fintech, Media"
+5618,Kyiv,2000,1000,Software Engineer,2,1,Java,,21,male,Незаконченное высшее,ГУТ,False,выше среднего,до 50 человек,Аутсорсинговая,Medtech
+6336,Lviv,1750,250,Software Engineer,2,1,Java,,21,male,Еще студент,Lvivская Политехника,True,средний,до 50 человек,Аутсорсинговая,Mobile
+6582,Kharkiv,1650,850,Software Engineer,2,2,Java,,21,male,Еще студент,НТУУ «КПИ»,True,выше среднего,свыше 1000 человек,Аутсорсинговая,Travel
+6646,Kharkiv,1600,500,Software Engineer,2,2,Java,,21,male,Еще студент,Other вуз,True,выше среднего,до 1000 человек,Аутсорсинговая,Media
+6732,Lviv,1600,750,Software Engineer,2,0.25,Java,,21,male,Незаконченное высшее,ЛНУ им. Франко,False,выше среднего,до 50 человек,Стартап,Інша
+6792,Kyiv,1600,800,Software Engineer,2,1,Java,,21,male,Еще студент,КНУ им. Шевченко,True,выше среднего,до 10 человек,Продуктовая,Gambling
+8099,Kyiv,1200,400,Software Engineer,2,2,Java,,21,male,Высшее,НТУУ «КПИ»,False,ниже среднего,до 200 человек,Продуктовая,E-commerce
+8208,Dnipro,1200,1200,Software Engineer,1,1,Java,,21,male,Еще студент,НГУ [Dniproопетровск],True,средний,свыше 1000 человек,Аутсорсинговая,Insurance
+8552,Kyiv,1100,550,Software Engineer,1,0,Java,,21,male,Незаконченное высшее,КНУСА,False,средний,до 200 человек,Аутсорсинговая,E-commerce
+9544,Vinnytsia,850,150,Software Engineer,2,1,Java,,21,female,Еще студент,ВНТУ,True,средний,до 1000 человек,Аутсорсинговая,Internet of Things
+Average salary is 2523.0

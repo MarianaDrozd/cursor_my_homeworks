@@ -52,50 +52,33 @@ parser.add_argument("-sex", required=False)
 parser.add_argument("-city", required=False)
 parser.add_argument("-position", "-p", required=False)
 parser.add_argument("--age", required=False)
-parser.add_argument("-sp", "--path_to_source_files", required=False)
+parser.add_argument("-sp", "--path_to_source_files", required=True)
 parser.add_argument("-dp", "--destination_path", required=False, default=".")
 parser.add_argument("-df", "--destination_filename", required=False, default=f"2020_june_mini.csv")
 
 args = parser.parse_args()
 
-exp = args.exp
-current_job_exp = args.current_job_exp
-sex = args.sex
-city = args.city
-position = args.position
-age = args.age
-path_to_source_files = args.path_to_source_files
-destination_path = args.destination_path
-destination_filename = args.destination_filename
-
-if args.sex is None:
-    args.sex = ""
-if args.city is None:
-    args.city = ""
-if args.position is None:
-    args.position = ""
-if args.age is None:
-    args.age = ""
+# exp = args.exp
+# current_job_exp = args.current_job_exp
+# sex = args.sex
+# city = args.city
+# position = args.position
+# age = args.age
+# path_to_source_files = args.path_to_source_files
+# destination_path = args.destination_path
+# destination_filename = args.destination_filename
 
 results = []
 with open("2020_june_mini.csv", "r") as file:
     reader = csv.DictReader(file)
+    fieldnames = reader.fieldnames
     for row in reader:
-        pass
+        if row["exp"] == args.exp and row["Город"] == args.city and row["Пол"] == args.sex and row[
+           "Должность"] == args.position:
+            results.append(row)
 
 
-
-
-
-
-# 2. Create a script with arguments:
-#
-# source_file_path; required: true;
-# start_salary; required: false; help: starting point of salary;
-# end_salary; required: false; help: the max point of salary;
-# position; required: false; help: position role
-# age; required: false; help: Age of person
-# language; required: false; help; Programming language
-
-
-# Based on this info generate a new report of average salary.
+with open("2020_june_mini_my_file.csv", "w", newline='') as f:
+    writer = csv.DictWriter(f, fieldnames=fieldnames)
+    for line in results:
+        writer.writerow(line)
