@@ -35,6 +35,7 @@ with open("2020_june_mini.csv", "r") as file:
 
 with open("2020_june_mini_my_file2.csv", "w", newline='') as f:
     writer = csv.DictWriter(f, fieldnames=fieldnames)
+    writer.writeheader()
     for line in results:
         writer.writerow(line)
 
@@ -49,8 +50,8 @@ with open("2020_june_mini_my_file2.csv", "r") as file:
         b = row[3].split(",")
         start_sal.append(a)
         end_sal.append(b)
-        start_sal1 = ' '.join([' '.join(strings) for strings in start_sal]).split()
-        end_sal1 = ' '.join([' '.join(strings) for strings in end_sal]).split()
+        start_sal1 = ' '.join([' '.join(strings) for strings in start_sal[1:]]).split()
+        end_sal1 = ' '.join([' '.join(strings) for strings in end_sal[1:]]).split()
         for i, item in enumerate(start_sal1):
             start_sal1[i] = float(item)
         for i, item in enumerate(end_sal1):
@@ -62,5 +63,4 @@ print(end_salary)
 
 average_salary = (sum(start_salary)/len(start_salary) + sum(end_salary)/len(end_salary))//2
 
-with open("2020_june_mini_my_file2.csv", "a") as f:
-    f.write(f"Average salary is {str(average_salary)}")
+print(f"Average salary is {str(average_salary)}")

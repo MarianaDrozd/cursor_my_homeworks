@@ -80,5 +80,6 @@ with open("2020_june_mini.csv", "r") as file:
 
 with open("2020_june_mini_my_file.csv", "w", newline='') as f:
     writer = csv.DictWriter(f, fieldnames=fieldnames)
+    writer.writeheader()
     for line in results:
         writer.writerow(line)
