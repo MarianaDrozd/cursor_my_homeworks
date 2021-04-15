@@ -1,5 +1,6 @@
 import time
 
+
 class LowBattery(Exception):
     pass
 
@@ -17,6 +18,8 @@ class NoWater(Exception):
 
 
 class RobotCleaner:
+    max_energy, max_trash, max_water = 100, 500, 500
+    min_energy, min_trash, min_water = 0, 0, 0
     work_energy = 5
     work_trash = 50
     work_water = 100
@@ -32,7 +35,6 @@ class RobotCleaner:
             self.trash_can = 0.0
         elif self.water_quantity < 0:
             self.water_quantity = 0.0
-
 
     def wash(self):
         if self.water_quantity > 0:
@@ -79,6 +81,5 @@ class RobotCleaner:
 
 
 # zhorick = RobotCleaner(100, 0, 1000)
-
+#
 # zhorick.move()
-
