@@ -38,16 +38,12 @@ for i, item in enumerate(f_exp1):
 for i, item in enumerate(f_current_job_exp1):
     f_current_job_exp1[i] = float(item)
 
-x = min(f_exp1)
-y = max(f_current_job_exp1)
-print(f"min(exp) = {x}, max(current_job_exp) = {y}")
-# min(exp) = 0.0, max(current_job_exp) = 10.0
 
 parser = argparse.ArgumentParser(description="Homework. The script should read the .csv file and get the information "
                                              "based on your input and generate a new .csv file with that info")
 
-parser.add_argument("-exp", required=False, default=0)
-parser.add_argument("-cj", "--current_job_exp", required=False, default=10)
+parser.add_argument("-exp", required=False, default=min(f_exp1))
+parser.add_argument("-cj", "--current_job_exp", required=False, default=max(f_current_job_exp1))
 parser.add_argument("-sex", required=False)
 parser.add_argument("-city", required=False)
 parser.add_argument("-position", "-p", required=False)
